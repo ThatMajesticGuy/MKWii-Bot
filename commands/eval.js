@@ -34,21 +34,7 @@ exports.run = (bot, message) => {
         const code = args.join(" ");
       let evaled = eval(code);
       
-                if (clean(evaled).includes(bot.token)) {
-          message.delete()
-          message.channel.send("That isnt a good idea cause it includes the bot token in it")
-          return;
-        }
-                if (code.includes(bot.token)) {
-                  message.delete()
-          message.channel.send("That isnt a good idea cause it includes the bot token in it")
-          return;
-        }
-        if (code.includes("process.env")) {
-          message.delete()
-          message.channel.send("Why would you wanna reveal our secrets?")
-          return;
-        }
+       
 
 
       if (typeof evaled !== "string")	
