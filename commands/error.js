@@ -10,7 +10,7 @@ const url = `https://wiimmfi.de/error?e=${error}&&m=json`
       url: url,
       json: true
   }, function (error, response, body) {
-body = JSON.parse(body.trim())
+body = JSON.parse(body)
       if (!error && response.statusCode === 200) {
      body[0].infolist.forEach(function(res) {
   console.log(res);
