@@ -15,6 +15,8 @@ body = JSON.parse(body.trim())
      body[0].infolist.forEach(function(res) {
   console.log(res);
 });
+      };
+  });
       }
       
       exports.help = {
