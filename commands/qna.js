@@ -17,7 +17,7 @@ exports.run = (bot, message, args) => {
   .addField("**Can I play CTGP with an ISO/through USB Loader?**", "Theoretically yes and no. Some say there are a few people out there that can manage to get CTGP on an ISO instead. That being said, unless you're a hacker, it's very, very quite hard if not impossible to get CTGP on an ISO.", "The developers of CTGP are and have been taking steps towards preventing piracy by fully restricting non-disc users from playing their mod. It is illegal to be in posession of an ISO and a Wii emulator if 1) you don't actually own the game (a physical copy of Mario Kart Wii that you purchased) and 2) you don't own a Wii console.")
   .addField("**How do I get to the leaderboards?**", "You have to beat the records of everyone on the specified track you want to set a record in. This will get you on [this leaderboard.](http://www.chadsoft.co.uk/time-trials/)")
   .addField("**Where can I find texture hacks and/or tutorials related to MKW modding, such as making my own custom tracks and music?**", "The [Custom Mario Kart Wiiki](https://http://wiki.tockdom.com/wiki/Main_Page) is the best place for this. The site also includes a database for downloadable distributions which include **custom tracks, hack packs, texture hacked tracks,** etc. The website is fairly active and includes a frequently-updated changelog for distributions on the main homepage.")
-  msg.channel.send({embed: embed})
+  message.channel.send({embed: embed})
 }
 
 exports.help = {
